@@ -36,19 +36,44 @@ public class Calculator {
     //***************Medium methods************************
 
     //TODO (*) |average value| add method which calculate average value of 3 numbers
+    public int averageValue(int a, int b, int c) {
+        return (a + b + c) / 3;
+    }
 
     //TODO (*) |even or odd| add method which get 1 number as parameter and return true if it even, and false - if odd
+    public boolean evenOdd(int a) {
+        return a % 2 == 0;
+    }
 
     //TODO (*) |biggest value| add method which get 2 number as parameters and return bigger of them, or 0 if they equals
+    public int maxNumber(int a, int b) {
+        if (a == b) {
+            return 0;
+        }
+        return Math.max(a, b);
+    }
 
-    //***************Hard methods************************
+
+
+//***************Hard methods************************
 
     //TODO (**) |addition with multiple parameters| add method which return sum of any quantity of parameter
+    public int sumAnyQuantityOfParameter(int... args) {
+        int sum = 0;
+        for (int i : args) {
+            sum += i;
+        }
+        return sum;
+    }
 
     //TODO (*) |divide by zero case| add method for division (check division by zero case
-    // - if we try to divide by zero - return -100;
-
-
+// - if we try to divide by zero - return -100;
+    public int checkDivisionByZeroCase(int a, int b) {
+        if (b == 0) {
+            return -100;
+        }
+        return a / b;
+    }
 }
 
 
