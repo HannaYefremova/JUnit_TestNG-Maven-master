@@ -29,8 +29,8 @@ public class Calculator {
     }
 
     //TODO add method for x^2
-    public int square(int a) {
-        return a * a;
+    public int square(int b) {
+        return b * b;
     }
 
     //***************Medium methods************************
